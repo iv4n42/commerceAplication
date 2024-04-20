@@ -17,7 +17,6 @@ export class PrincipalViewComponent implements OnInit{
    ngOnInit(){
      this._JsonLoader.loadJson(this.baseURL).subscribe((data) => {
        this.items1 = data
-       console.log(data)
  
      })
     }

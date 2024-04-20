@@ -21,7 +21,6 @@ export class DetailsViewComponent implements OnInit {
     this.itemId = this.route.snapshot.paramMap.get('id')
     this.http.loadJson(this.baseURL).subscribe((data) => {
        this.itemsList = data
-       console.log(data)
     })
  }
 
